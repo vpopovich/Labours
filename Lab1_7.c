@@ -25,7 +25,7 @@ void initArray(int array[], int n)
 		scanf("%d", &array[i]);
 	}
 }
-int gcd(int a, int b)
+int gcd(int a, int b)		//wtf woth 0?
 {
 	 while (a != b) 
 	 {
