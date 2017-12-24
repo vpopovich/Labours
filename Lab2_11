@@ -26,7 +26,6 @@ double myFunc(double x)
 		s += sn;
 		t = x * (k - n)/(1 + n);
 		sn *= t;
-		//printf("%lf",sn);
 		n++;
 	}	
 	return s;
