@@ -16,7 +16,7 @@ void main()
 	}
 	initArray(array, n);
 	sort(array, out, n);
-	printArray(array, n);
+	printArray(out, n);
 }
 
 void initArray(int array[], int n)
@@ -34,22 +34,13 @@ void sort(int array[], int out[], int n)
 		int count = 0;
 		for (int j = 0; j < n; j++)              
 		{
-			if (array[j] < array[i])
+			if (array[j] < array[i] ||array[j] == array[i] && j > i)
 			{
 				count++;
 			} 
-			else                                          
-				if (array[j] == array[i] && j > i)
-				{
-					count++;
-				}    
 		}
 		out[count] = array[i];                            
 	}                                               
-	for (int i = 0; i < n; i++)
-	{
-		array[i] = out[i];
-	}
 }
 void printArray(int array[], int n)
 {
