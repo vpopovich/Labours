@@ -1,7 +1,6 @@
 #include "stdafx.h"
 
-	//---- возвращается индекс скобки " {" для пары с максимальной глубиной
-
+	
 void initString(char c[]);
 int findBrace(char c[]);
 int findEnd(char c[], int begin);
