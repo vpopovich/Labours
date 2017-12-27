@@ -23,9 +23,9 @@ void initString(char c[])
 }
 int findBrace(char c[])
 {
-	int k = 0;                                         // Счетчик вложенности
-	int max = 0;                                    // Максимум вложенности
-	int index = -1;                                         // Индекс максимальной " {"
+	int k = 0;                                        
+	int max = 0;                                   
+	int index = -1;                                        
 	for (int i = 0; c[i] != 0; i++)
 	{
 		if (c[i] == '}')
@@ -44,7 +44,7 @@ int findBrace(char c[])
 	}
 	if (k != 0)
 	{
-		return 0;                        // Защита " от дурака" , нет парных скобок
+		return 0;                        
 	}
 	return index;
 }
